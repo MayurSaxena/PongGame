@@ -80,7 +80,7 @@ def initialize():
 		paddleHit = pygame.mixer.Sound('data/Paddle Hit.ogg')
 	except: # If it throws an error, ignore it, and:
 		sound = False # Tell the program we don't have sound
-		print "Sound not initialized... No audio device found!" # Print this message, to where, I have no idea
+		print("Sound not initialized... No audio device found!") # Print this message, to where, I have no idea
 
 	return # end the function
 
@@ -264,12 +264,12 @@ def createMainMenu():
 	# Make a whole bunch of labels and buttons
 
 	title = Label(TITLEFONT,"PONG", 40)
-	oneplayer = Button(TEXTFONT,"1 joueur", 120)
-	twoplayer = Button(TEXTFONT,"2 joueurs", 200)
+	oneplayer = Button(TEXTFONT,"1 player", 120)
+	twoplayer = Button(TEXTFONT,"2 players", 200)
 	highscores = Button(TEXTFONT,"scores", 270)
-	help = Button(TEXTFONT,"aide", 340)
-	quit = Button(TEXTFONT,"quitter", 410)
-	credits = Label(CREDITFONT,"Par Mayur Saxena Copyright 2013",460)
+	help = Button(TEXTFONT,"help", 340)
+	quit = Button(TEXTFONT,"quit", 410)
+	credits = Label(CREDITFONT,"By Mayur Saxena Copyright 2013",460)
 	#beta = Label(CREDITFONT,"BETA", 30, 510)
 
 	SCREEN.set_at((0,0),BLACK) # Make the screen identifying pixel black
